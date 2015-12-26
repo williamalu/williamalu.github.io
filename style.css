@@ -1,8 +1,17 @@
 body {
+    columns: 300px 2;
+    -webkit-columns: 300px 2;
+    -moz-columns: 300px 2;
+    column-gap: 10em;
+    -webkit-column-gap: 10em;
+    -moz-column-gap: 10em;
 	background-color: #ecf0f1;
+    margin: 2%;
 }
 
-ul {
+/* main navigation */
+
+#top-menu ul {
 	font-family: 'bebas_neue_regularregular', sans-serif;
 	font-size: 2em;
 	list-style-type: none;
@@ -10,37 +19,25 @@ ul {
 	margin-bottom: 15px;
 }
 
-li {
+#top-menu li {
 	color: #34495e;
 	display: inline-block;
 }
 
-#left-column {
-    float: left;
-    margin: 0;
-    width: 33%;
-}
-
-#right-column {
-    float: bottom;
-    margin: 0;
-    width: 50%;
-}
+/* website name header */
 
 #name-title {
     font-family: "bebas_neuebold", sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     color: #27ae60;
     line-height: 10%;
-    letter-spacing: 3px;
 }
 
 #name-desc {
     font-family: "bebas_neuebold", sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     color: #34495e;
     line-height: 10%;
-    letter-spacing: 3px;
 }
 
 hr {
@@ -49,33 +46,41 @@ hr {
     width: 40%;
 }
 
+.centeredImage {
+    text-align: center;
+    display: block;
+    width: 75%;
+}
+
 #about {
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
     color: #34495e;
 }
 
-#menu-link {
+.menu-link {
 	display: inline-block;
 	text-decoration: none;
 	padding: 5px;
 	color: #34495e;
 }
 
-#inline-link {
+.inline-link {
 	display: inline-block;
 	text-decoration: none;
 	color: #27ae60;
 }
 
 footer {
-	font-family: 'Montserrat', sans-serif;
+    column-span: all; 	
+    -webkit-column-span: all; 
+    font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	color: #34495e;
-    position: fixed;
-    bottom: 40px;
-    width:99%;
-    height:40px;   /* Height of the footer */
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    height: 100px;
 }
 
 /* Fonts */
